@@ -99,6 +99,28 @@
       "hora_visita": "08:30 - 09:45",
       "estado": "PENDIENTE"
     },
+     {
+      "dia": "Miércoles",
+      "cliente": {
+        "nombre": "Tienda P",
+        "direccion": "Calle 8 #123, Panamá",
+        "latitud": 8.9924,
+        "longitud": -79.5019
+      },
+      "hora_visita": "08:30 - 09:45",
+      "estado": "PENDIENTE"
+    },
+     {
+      "dia": "Miércoles",
+      "cliente": {
+        "nombre": "Tienda 8",
+        "direccion": "Calle 8 #123, Panamá",
+        "latitud": 8.9824,
+        "longitud": -79.5019
+      },
+      "hora_visita": "08:30 - 09:45",
+      "estado": "PENDIENTE"
+    },
     {
       "dia": "Jueves",
       "cliente": {
