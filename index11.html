@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINA CORP RUTERO</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="logolina.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+</head>
+<body class="bg-gray-100">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img src="logolina.png" alt="Logo">
+            </div>
+            
+            <div class="nav-group">
+                <div class="nav-group-title">Navegación</div>
+                <a href="#" class="nav-item active">
+                    <i class="mdi mdi-map-marker-path"></i>
+                    <span>Rutas</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="mdi mdi-calendar-clock"></i>
+                    <span>Calendario</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="mdi mdi-account-group"></i>
+                    <span>Clientes</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="mdi mdi-chart-bar"></i>
+                    <span>Reportes</span>
+                </a>
+            </div>
+            
+            <div class="nav-group">
+                <div class="nav-group-title">Herramientas</div>
+                <a href="#" class="nav-item">
+                    <i class="mdi mdi-cog"></i>
+                    <span>Configuración</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="mdi mdi-help-circle"></i>
+                    <span>Ayuda</span>
+                </a>
+            </div>
+        </aside>
+
+       
+            <main class="main-content">
+                <!-- Header -->
+                <header class="header">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                    <h2>Gestión de Rutas</h2>
+                    <div class="user-menu">
+                        <div class="user-avatar"></div>
+                    </div>
+                </header>
+       
+      <!-- Panel de control -->
+      <div class="card">
+        <div class="card-header">
+            <h3>Control de Visitas</h3>
+            <div class="d-flex gap-2">
+                <select class="form-select" id="visitDay" style="width: 150px;">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sábado">Sábado</option>
+                </select>
+                  <button class="action-btn btn-primary" onclick="loadVisits()">
+                            <i class="mdi mdi-refresh"></i> Cargar
+                        </button>
+                
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="d-flex gap-2 mb-3">
+                <button class="action-btn btn-primary" onclick="optimizeRoute()">
+                    <i class="mdi mdi-map-marker-path"></i> Optimizar Ruta
+                </button>
+            
+                <button class="action-btn btn-outline" onclick="locateUser()">
+                    <i class="mdi mdi-crosshairs-gps"></i> Mi Ubicación
+                </button>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="clientModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModalLabel">Detalles del Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="clientModalBody">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="action-btn btn-primary" id="navigateButton">Navegar</button>
+                    <button type="button" class="action-btn btn-outline" data-bs-dismiss="modal">Cerrar</button>
+
+                    <button type="button" class="action-btn btn-success" id="completeButton">Marcar como completado</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    
+        <!-- Content Area -
+<div class="flex flex-1">
+    !-- Map --
+    <div class="w-3/4 p-4">
+        <div id="map" class="h-full rounded-lg shadow-md"></div>
+    </div>
+
+    !-- Clients List --
+    <div class="w-1/4 bg-white p-4 border-l">
+        <h2 class="text-xl font-semibold mb-4">Clientes del Día</h2>
+
+      
+
+        -- Lista de clientes generada dinámicamente --
+        <div id="visitList" class="space-y-4">
+            !-- Aquí se insertarán las tarjetas dinámicamente --
+        </div>
+    </div>
+</div>-->
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="map-container">
+                <div id="map"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Clientes del Día</h3>
+            </div>
+            <div class="card-body">
+                <div class="client-list" id="clientList">
+                    <!-- Clientes se cargarán aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script1.js"></script>
+</body>
+</html>
