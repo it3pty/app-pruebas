@@ -1,0 +1,213 @@
+{
+"visitas": [
+    {
+      "dia": "Lunes",
+      "cliente": {
+        "nombre": "Tienda A",
+        "direccion": "Calle 1 #123, Panamá",
+        "latitud": 8.9824,
+        "longitud": -79.5199
+      },
+      "hora_visita": "09:00 - 11:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Lunes",
+      "cliente": {
+        "nombre": "Supermercado B",
+        "direccion": "Avenida 2 #456, Panamá",
+        "latitud": 8.9924,
+        "longitud": -79.5299
+      },
+      "hora_visita": "11:30 - 13:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Lunes",
+      "cliente": {
+        "nombre": "Restaurante O",
+        "direccion": "Calle 5 #123, Panamá",
+        "latitud": 8.9724,
+        "longitud": -79.5123
+      },
+      "hora_visita": "13:30 - 15:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Martes",
+      "cliente": {
+        "nombre": "Farmacia C",
+        "direccion": "Calle 3 #789, Panamá",
+        "latitud": 9.0024,
+        "longitud": -79.5399
+      },
+      "hora_visita": "14:00 - 16:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Martes",
+      "cliente": {
+        "nombre": "Tienda D",
+        "direccion": "Calle 4 #123, Panamá",
+        "latitud": 9.0124,
+        "longitud": -79.5499
+      },
+      "hora_visita": "10:00 - 12:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Martes",
+      "cliente": {
+        "nombre": "Oficina P",
+        "direccion": "Avenida 6 #456, Panamá",
+        "latitud": 9.0224,
+        "longitud": -79.5480
+      },
+      "hora_visita": "08:00 - 09:30",
+      "estado": "completado"
+    },
+    {
+      "dia": "Miércoles",
+      "cliente": {
+        "nombre": "Restaurante E",
+        "direccion": "Avenida 5 #456, Panamá",
+        "latitud": 8.9724,
+        "longitud": -79.5099
+      },
+      "hora_visita": "13:00 - 15:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Miércoles",
+      "cliente": {
+        "nombre": "Oficina F",
+        "direccion": "Calle 6 #789, Panamá",
+        "latitud": 8.9524,
+        "longitud": -79.5999
+      },
+      "hora_visita": "10:00 - 11:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Miércoles",
+      "cliente": {
+        "nombre": "Tienda Q",
+        "direccion": "Calle 8 #123, Panamá",
+        "latitud": 8.9624,
+        "longitud": -79.5019
+      },
+      "hora_visita": "08:30 - 09:45",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Jueves",
+      "cliente": {
+        "nombre": "Tienda G",
+        "direccion": "Calle 7 #123, Panamá",
+        "latitud": 8.9224,
+        "longitud": -79.5799
+      },
+      "hora_visita": "14:00 - 16:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Jueves",
+      "cliente": {
+        "nombre": "Supermercado H",
+        "direccion": "Avenida 8 #456, Panamá",
+        "latitud": 8.9424,
+        "longitud": -79.5699
+      },
+      "hora_visita": "09:00 - 11:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Jueves",
+      "cliente": {
+        "nombre": "Restaurante R",
+        "direccion": "Calle 9 #678, Panamá",
+        "latitud": 8.9123,
+        "longitud": -79.5823
+      },
+      "hora_visita": "11:30 - 13:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Viernes",
+      "cliente": {
+        "nombre": "Farmacia I",
+        "direccion": "Calle 9 #789, Panamá",
+        "latitud": 8.9624,
+        "longitud": -79.5599
+      },
+      "hora_visita": "11:30 - 13:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Viernes",
+      "cliente": {
+        "nombre": "Oficina J",
+        "direccion": "Calle 10 #123, Panamá",
+        "latitud": 8.9824,
+        "longitud": -79.5499
+      },
+      "hora_visita": "14:00 - 15:00",
+      "estado": "completado"
+    },
+    {
+      "dia": "Viernes",
+      "cliente": {
+        "nombre": "Restaurante S",
+        "direccion": "Calle 12 #345, Panamá",
+        "latitud": 8.9223,
+        "longitud": -79.5734
+      },
+      "hora_visita": "09:00 - 10:30",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Sábado",
+      "cliente": {
+        "nombre": "Tienda K",
+        "direccion": "Avenida 11 #456, Panamá",
+        "latitud": 8.9924,
+        "longitud": -79.5399
+      },
+      "hora_visita": "09:30 - 11:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Sábado",
+      "cliente": {
+        "nombre": "Supermercado L",
+        "direccion": "Calle 12 #789, Panamá",
+        "latitud": 8.9524,
+        "longitud": -79.5299
+      },
+      "hora_visita": "13:00 - 14:30",
+      "estado": "completado"
+    },
+    {
+      "dia": "Sábado",
+      "cliente": {
+        "nombre": "Farmacia T",
+        "direccion": "Calle 13 #888, Panamá",
+        "latitud": 8.9324,
+        "longitud": -79.5189
+      },
+      "hora_visita": "15:00 - 16:00",
+      "estado": "PENDIENTE"
+    },
+    {
+      "dia": "Sábado",
+      "cliente": {
+        "nombre": "Oficina U",
+        "direccion": "Calle 15 #567, Panamá",
+        "latitud": 8.9124,
+        "longitud": -79.5889
+      },
+      "hora_visita": "08:00 - 09:00",
+      "estado": "completado"
+    }
+]
+}
